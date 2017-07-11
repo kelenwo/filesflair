@@ -2,7 +2,7 @@
 
 FilesFlair is an open source download portal. Crafted by guys at XcurityLabs just to refresh knowledge and do some collaboration
 
-## Tech to be used
+## Tech used
 FilesFlair is developed with the following tech:
 ### Front-end
 - HTML(5)
