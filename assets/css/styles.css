@@ -1,5 +1,6 @@
 body {
-	background-image: url('../images/bg.jpg');
+	/*background-image: url('../images/bg.jpg');*/
+	background-color: rgb(248,248,248);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -7,7 +8,7 @@ body {
 }
 
 .top-margin {
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
 .phdr {
@@ -29,27 +30,35 @@ body {
 }
 
 #main-nav {
-	background: linear-gradient(top, #FFF, purple);
-	background: -o-linear-gradient(top, #FFF, purple);
-	background: -moz-linear-gradient(top, #FFF, purple);
-	background: -ms-linear-gradient(top, #FFF, purple);
-	background: -webkit-linear-gradient(top, #FFF, purple);
+	background: linear-gradient(bottom, #990099, #9900CC 95%);
+	background: -webkit-linear-gradient(bottom, #990099, #9900CC 95%);
+	background: -o-linear-gradient(bottom, #990099, #9900CC 95%);
+	background: -moz-linear-gradient(bottom, #990099, #9900CC 95%);
+	background: -ms-linear-gradient(bottom, #990099, #9900CC 95%);
 	display: block;
+	color: #FFF;
 	opacity: 1;
-	width: 98%;
-	-webkit-transition: opacity 2s;
-	transition: opacity 2s;
 	height: 70px;
-	position: relative;
-	animation-name: example;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-
+	left: 10px;
+	right: 10px;
+	position: absolute;
+	/* Transition to change opacity in 2 seconds*/
+	/*-webkit-transition: opacity 2s;
+	transition: opacity 2s;*/
+	/* Transition to reduce width in 2 seconds */
+	-webkit-transition: left 2s, right 2s;
+	transition: left 2s, right 2s;
+	transition-timing-function: ease-in-out;
 }
 
 #main-nav:hover {
-	background: -webkit-linear-gradient(top, #fff, #000);
+	/*background: -webkit-linear-gradient(top, #fff, #000);
 	background: linear-gradient(top, #fff, #000);
-	opacity: 0.6;
+	opacity: 0.6;*/
+	left: 20px;
+	right: 20px;
 }
 
+.fileimg {
+	/* */
+}
