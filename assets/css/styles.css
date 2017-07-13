@@ -19,3 +19,37 @@ body {
 	border-radius: 7px 0 0 0;
 	background-image: url('../images/star.png');
 }
+
+@keyframes example {
+	0% {left:0px; top:0px; right: 0px;}
+	50% {left:25px; top:0px; right: 25px;}
+	/*50% {background-color: blue; left:200px; top:200px;}*/
+	/*75% {background-color: green; left:0px; top:200px;}*/
+	100% {left:0px; top:0px; right: 0px;}
+}
+
+#main-nav {
+	background: linear-gradient(top, #FFF, purple);
+	background: -o-linear-gradient(top, #FFF, purple);
+	background: -moz-linear-gradient(top, #FFF, purple);
+	background: -ms-linear-gradient(top, #FFF, purple);
+	background: -webkit-linear-gradient(top, #FFF, purple);
+	display: block;
+	opacity: 1;
+	width: 98%;
+	-webkit-transition: opacity 2s;
+	transition: opacity 2s;
+	height: 70px;
+	position: relative;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+
+}
+
+#main-nav:hover {
+	background: -webkit-linear-gradient(top, #fff, #000);
+	background: linear-gradient(top, #fff, #000);
+	opacity: 0.6;
+}
+
